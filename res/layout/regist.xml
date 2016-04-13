@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/login_top_bg" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/main_title"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_top_layout"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/regist_Tnum"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="right"
+            android:text="@string/regist_num"
+            android:textColor="#aaaaaa"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/regist_num"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/regist_Tnum"
+            android:background="@drawable/login_selector"
+            android:digits="1234567890"
+            android:hint="@string/login_user_hint"
+            android:textColor="#aaaaaa"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/regist_Tpwd"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="right"
+            android:text="@string/regist_password"
+            android:textColor="#aaaaaa"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/regist_pwd"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/regist_Tpwd"
+            android:background="@drawable/login_selector"
+            android:hint="@string/login_passwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="#aaaaaa"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/check_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/regist_check_Tpwd"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/regist_check_password"
+            android:textColor="#aaaaaa"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/regist_check_pwd"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/regist_check_Tpwd"
+            android:background="@drawable/login_selector"
+            android:hint="@string/check_passwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="#aaaaaa"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/chp"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/regist_check_pwd"
+            android:textColor="#aaaaaa" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_pwd"
+        android:layout_marginTop="50dp" >
+
+        <Button
+            android:id="@+id/regist_regist_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/main_login_selector"
+            android:text="@string/main_regist"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/regist_cancel_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/main_login_selector"
+            android:paddingTop="10dp"
+            android:text="@string/main_cancel"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>
